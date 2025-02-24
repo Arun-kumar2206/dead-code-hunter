@@ -12,10 +12,18 @@
   "activationEvents": [],
   "main": "./out/extension.js",
   "contributes": {
+    "views": {
+      "explorer": [
+        {
+          "id": "deadCodeHunter",
+          "name": "Dead Code Hunter"
+        }
+      ]
+    },
     "commands": [
       {
-        "command": "dead-code-hunter.helloWorld",
-        "title": "Hello World"
+        "command": "deadCodeHunter.clearList",
+        "title": "Clear Dead Code List"
       }
     ]
   },

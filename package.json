@@ -1,8 +1,13 @@
 {
   "name": "dead-code-hunter",
   "displayName": "Dead Code Hunter",
-  "description": "Monitors files that have warnings (yellow) or errors (red) in the file explorer.",
-  "version": "0.0.1",
+  "description": "A VS Code extension to detect dead code, errors, and warnings.",
+  "version": "1.0.0",
+  "publisher": "Niko Hoffrén",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/<your-github-username>/dead-code-hunter.git"
+  },
   "engines": {
     "vscode": "^1.97.0"
   },
@@ -48,5 +53,13 @@
   },
   "dependencies": {
     "dead-code-hunter": "file:"
-  }
+  },
+  "keywords": [
+    "dead code",
+    "unused code",
+    "vscode extension",
+    "diagnostics",
+    "warnings",
+    "errors"
+  ]
 }

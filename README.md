@@ -1,6 +1,15 @@
 # Dead Code Hunter - VS Code Extension
 
+<div align="center">
+
+[![LICENSE](https://img.shields.io/badge/license-MIT-blue.svg)](LICENSE)
+[![PR:s Welcome](https://img.shields.io/badge/PR:s-welcome-green.svg)](https://github.com/nikohoffren/dead-code-hunter/pulls)
+[![Contributors Welcome](https://img.shields.io/badge/contributors-welcome-green.svg)](https://github.com/nikohoffren/dead-code-hunter/pulls)
+![GitHub repo size](https://img.shields.io/github/repo-size/nikohoffren/dead-code-hunter)
+
 Dead Code Hunter is a Visual Studio Code extension designed to help developers track and manage unused code in their projects. It integrates with the VS Code diagnostic system to detect **errors**, **warnings**, and **dead code** (unused variables and functions) across your files and lists them in an easy-to-navigate panel. This allows you to quickly identify and clean up unused code, making your project more efficient and maintainable.
+
+</div>
 
 ## Features
 

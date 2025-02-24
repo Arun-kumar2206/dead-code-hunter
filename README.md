@@ -38,32 +38,32 @@ If you're working on the extension or want to run it locally:
 1. Clone this repository:
    ```bash
    git clone <repository-url>
-
-    Navigate to the extension folder:
-
+  ```
+2. Navigate to the extension folder:
+  ```bash
   cd <extension-folder>
-
-Install dependencies:
-
+  ```
+3. Install dependencies:
+```bash
 npm install
-
-Compile the extension:
-
+```
+4. Compile the extension:
+```bash
     npm run compile
-
-    Launch the extension in VS Code:
-        Press F5 to run the extension in a new VS Code window.
+```
+5. Launch the extension in VS Code:
+Press F5 to run the extension in a new VS Code window.
 
 ## Usage
 
-    Open your project in VS Code.
-    You will see a Dead Code Hunter panel in the Activity Bar.
-    The panel will show:
-        Errors: Files with errors in your project.
-        Warnings: Files with warnings.
-        Dead Code: Files that contain unused code (e.g., greyed-out variables or functions).
-    You can click on the items in the panel to quickly open and fix the corresponding files.
-    Click the "Clear List" button to reset the panel and remove all items.
+Open your project in VS Code.
+You will see a Dead Code Hunter panel in the Activity Bar.
+The panel will show:
+- Errors: Files with errors in your project.
+- Warnings: Files with warnings.
+- Dead Code: Files that contain unused code (e.g., greyed-out variables or functions).
+You can click on the items in the panel to quickly open and fix the corresponding files.
+Click the "Clear List" button to reset the panel and remove all items.
 
 ## Configuration
 
@@ -72,11 +72,11 @@ Contributing
 
 Contributions are welcome! If you'd like to contribute to the extension, please follow these steps:
 
-    Fork the repository.
-    Create a new branch (git checkout -b feature/your-feature-name).
-    Make your changes and commit them (git commit -am 'Add your feature').
-    Push to your branch (git push origin feature/your-feature-name).
-    Create a new Pull Request.
+1. Fork the repository.
+2. Create a new branch `git checkout -b feature/your-feature-name`.
+3. Make your changes and commit them `git commit -am 'Add your feature'`.
+4. Push to your branch `git push origin feature/your-feature-name`.
+5. Create a new Pull Request.
 
 ## License
 
@@ -84,9 +84,9 @@ This extension is licensed under the MIT License. See the LICENSE file for more 
 
 ## Known Issues:
 
-    Currently, unused code is detected using basic heuristics. It may not catch all instances, depending on the language and tooling setup. Future improvements may integrate with advanced linters like ESLint for more thorough dead code detection.
+Currently, unused code is detected using basic heuristics. It may not catch all instances, depending on the language and tooling setup. Future improvements may integrate with advanced linters like ESLint for more thorough dead code detection.
 
 ## Acknowledgements:
 
-    This extension uses VS Code's Diagnostics API to gather error and warning information.
-    Unused Code Detection is based on diagnostic messages and may be further refined in the future.
+This extension uses VS Code's Diagnostics API to gather error and warning information.
+Unused Code Detection is based on diagnostic messages and may be further refined in the future.

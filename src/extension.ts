@@ -18,24 +18,24 @@ export function activate(context: vscode.ExtensionContext) {
 export function deactivate() {}
 
 class DeadCodeTreeProvider implements vscode.TreeDataProvider<TreeItem> {
-  private _onDidChangeTreeData: vscode.EventEmitter<void> =
+  private readonly _onDidChangeTreeData: vscode.EventEmitter<void> =
     new vscode.EventEmitter<void>();
   readonly onDidChangeTreeData: vscode.Event<void> =
     this._onDidChangeTreeData.event;
 
-  private errorFiles: Set<vscode.Uri> = new Set();
-  private warningFiles: Set<vscode.Uri> = new Set();
-  private deadCodeFiles: Set<vscode.Uri> = new Set(); // Tracking dead code files
+  private readonly errorFiles: Set<vscode.Uri> = new Set();
+  private readonly warningFiles: Set<vscode.Uri> = new Set();
+  private readonly deadCodeFiles: Set<vscode.Uri> = new Set();
 
   refresh(): void {
     this.errorFiles.clear();
     this.warningFiles.clear();
-    this.deadCodeFiles.clear(); // Reset dead code files
+    this.deadCodeFiles.clear();
 
     vscode.workspace.textDocuments.forEach((doc) => {
       const diagnostics = vscode.languages.getDiagnostics(doc.uri);
 
-      // Check for errors and warnings
+
       diagnostics.forEach((d) => {
         if (d.severity === vscode.DiagnosticSeverity.Error) {
           this.errorFiles.add(doc.uri);
@@ -43,11 +43,8 @@ class DeadCodeTreeProvider implements vscode.TreeDataProvider<TreeItem> {
         if (d.severity === vscode.DiagnosticSeverity.Warning) {
           this.warningFiles.add(doc.uri);
         }
-
-        // Check for unused variables/functions (greyed out code)
         if (d.message.includes("is declared but")) {
-          // Heuristic to find unused code
-          this.deadCodeFiles.add(doc.uri); // Add to dead code set
+          this.deadCodeFiles.add(doc.uri);
         }
       });
     });
@@ -58,7 +55,7 @@ class DeadCodeTreeProvider implements vscode.TreeDataProvider<TreeItem> {
   clearList(): void {
     this.errorFiles.clear();
     this.warningFiles.clear();
-    this.deadCodeFiles.clear(); // Clear dead code files
+    this.deadCodeFiles.clear();
     this._onDidChangeTreeData.fire();
   }
 
@@ -140,7 +137,6 @@ class TreeItem extends vscode.TreeItem {
       };
     }
 
-    // Set the icon for each section (errors, warnings, dead code)
     if (contextValue === "error") {
       this.iconPath = new vscode.ThemeIcon(
         "error",
@@ -155,7 +151,7 @@ class TreeItem extends vscode.TreeItem {
       this.iconPath = new vscode.ThemeIcon(
         "warning",
         new vscode.ThemeColor("debugIcon.foreground")
-      ); // Dead code color
+      );
     }
   }
 }

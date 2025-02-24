@@ -1,6 +1,6 @@
-# Dead Code Hunter - VS Code Extension
-
 <div align="center">
+
+# Dead Code Hunter - VS Code Extension
 
 [![LICENSE](https://img.shields.io/badge/license-MIT-blue.svg)](LICENSE)
 [![PR:s Welcome](https://img.shields.io/badge/PR:s-welcome-green.svg)](https://github.com/nikohoffren/dead-code-hunter/pulls)
@@ -36,20 +36,23 @@ You can directly install the Dead Code Hunter extension from the [Visual Studio 
 If you're working on the extension or want to run it locally:
 
 1. Clone this repository:
-   ```bash
-   git clone <repository-url>
-  ```
+```bash
+git clone <repository-url>
+```
+
 2. Navigate to the extension folder:
-  ```bash
-  cd <extension-folder>
-  ```
+```bash
+cd <extension-folder>
+```
+
 3. Install dependencies:
 ```bash
 npm install
 ```
+
 4. Compile the extension:
 ```bash
-    npm run compile
+npm run compile
 ```
 5. Launch the extension in VS Code:
 Press F5 to run the extension in a new VS Code window.

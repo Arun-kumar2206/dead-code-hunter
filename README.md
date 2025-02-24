@@ -1,71 +1,83 @@
-# dead-code-hunter README
+# Dead Code Hunter - VS Code Extension
 
-This is the README for your extension "dead-code-hunter". After writing up a brief description, we recommend including the following sections.
+Dead Code Hunter is a Visual Studio Code extension designed to help developers track and manage unused code in their projects. It integrates with the VS Code diagnostic system to detect **errors**, **warnings**, and **dead code** (unused variables and functions) across your files and lists them in an easy-to-navigate panel. This allows you to quickly identify and clean up unused code, making your project more efficient and maintainable.
 
 ## Features
 
-Describe specific features of your extension including screenshots of your extension in action. Image paths are relative to this README file.
+- **Track Errors**: Displays a list of files with errors, making it easier to fix problems in your code.
+- **Track Warnings**: Displays a list of files with warnings, helping you address potential issues early.
+- **Detect Dead Code**: Identify files that contain **unused functions** or **unused variables** (greyed-out code) and list them separately for review.
+- **Grouping and Filtering**: Errors, warnings, and dead code are grouped into separate sections for better organization.
+- **Clear List**: A button to clear the list of errors, warnings, and dead code in the panel.
+- **Auto-Expanding Sections**: The **Errors** and **Warnings** sections are expanded by default for immediate visibility.
 
-For example if there is an image subfolder under your extension project workspace:
+## Installation
 
-\!\[feature X\]\(images/feature-x.png\)
+### 1. Install from Visual Studio Code Marketplace
 
-> Tip: Many popular extensions utilize animations. This is an excellent way to show off your extension! We recommend short, focused animations that are easy to follow.
+You can directly install the Dead Code Hunter extension from the [Visual Studio Code Marketplace](https://marketplace.visualstudio.com/).
 
-## Requirements
+1. Open VS Code.
+2. Go to the Extensions panel (Ctrl+Shift+X or Cmd+Shift+X).
+3. Search for **Dead Code Hunter**.
+4. Click **Install**.
 
-If you have any requirements or dependencies, add a section describing those and how to install and configure them.
+### 2. Install Locally (for Development)
 
-## Extension Settings
+If you're working on the extension or want to run it locally:
 
-Include if your extension adds any VS Code settings through the `contributes.configuration` extension point.
+1. Clone this repository:
+   ```bash
+   git clone <repository-url>
 
-For example:
+    Navigate to the extension folder:
 
-This extension contributes the following settings:
+  cd <extension-folder>
 
-* `myExtension.enable`: Enable/disable this extension.
-* `myExtension.thing`: Set to `blah` to do something.
+Install dependencies:
 
-## Known Issues
+npm install
 
-Calling out known issues can help limit users opening duplicate issues against your extension.
+Compile the extension:
 
-## Release Notes
+    npm run compile
 
-Users appreciate release notes as you update your extension.
+    Launch the extension in VS Code:
+        Press F5 to run the extension in a new VS Code window.
 
-### 1.0.0
+## Usage
 
-Initial release of ...
+    Open your project in VS Code.
+    You will see a Dead Code Hunter panel in the Activity Bar.
+    The panel will show:
+        Errors: Files with errors in your project.
+        Warnings: Files with warnings.
+        Dead Code: Files that contain unused code (e.g., greyed-out variables or functions).
+    You can click on the items in the panel to quickly open and fix the corresponding files.
+    Click the "Clear List" button to reset the panel and remove all items.
 
-### 1.0.1
+## Configuration
 
-Fixed issue #.
+This extension automatically detects errors, warnings, and dead code based on the diagnostics provided by VS Code. You do not need to configure any settings to start using it, but you can always customize your diagnostics setup via your VS Code settings (e.g., ESLint or other linters).
+Contributing
 
-### 1.1.0
+Contributions are welcome! If you'd like to contribute to the extension, please follow these steps:
 
-Added features X, Y, and Z.
+    Fork the repository.
+    Create a new branch (git checkout -b feature/your-feature-name).
+    Make your changes and commit them (git commit -am 'Add your feature').
+    Push to your branch (git push origin feature/your-feature-name).
+    Create a new Pull Request.
 
----
+## License
 
-## Following extension guidelines
+This extension is licensed under the MIT License. See the LICENSE file for more information.
 
-Ensure that you've read through the extensions guidelines and follow the best practices for creating your extension.
+## Known Issues:
 
-* [Extension Guidelines](https://code.visualstudio.com/api/references/extension-guidelines)
+    Currently, unused code is detected using basic heuristics. It may not catch all instances, depending on the language and tooling setup. Future improvements may integrate with advanced linters like ESLint for more thorough dead code detection.
 
-## Working with Markdown
+## Acknowledgements:
 
-You can author your README using Visual Studio Code. Here are some useful editor keyboard shortcuts:
-
-* Split the editor (`Cmd+\` on macOS or `Ctrl+\` on Windows and Linux).
-* Toggle preview (`Shift+Cmd+V` on macOS or `Shift+Ctrl+V` on Windows and Linux).
-* Press `Ctrl+Space` (Windows, Linux, macOS) to see a list of Markdown snippets.
-
-## For more information
-
-* [Visual Studio Code's Markdown Support](http://code.visualstudio.com/docs/languages/markdown)
-* [Markdown Syntax Reference](https://help.github.com/articles/markdown-basics/)
-
-**Enjoy!**
+    This extension uses VS Code's Diagnostics API to gather error and warning information.
+    Unused Code Detection is based on diagnostic messages and may be further refined in the future.

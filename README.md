@@ -83,7 +83,7 @@ Contributions are welcome! If you'd like to contribute to the extension, please 
 
 ## License
 
-This extension is licensed under the MIT License. See the LICENSE file for more information.
+This extension is licensed under the MIT License. See the [LICENSE](https://github.com/nikohoffren/dead-code-hunter/LICENSE) file for more information.
 
 ## Known Issues:
 

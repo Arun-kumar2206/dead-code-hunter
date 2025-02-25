@@ -4,6 +4,12 @@ All notable changes to the "dead-code-hunter" extension will be documented in th
 
 Check [Keep a Changelog](http://keepachangelog.com/) for recommendations on how to structure this file.
 
+# [1.0.5] - 2025-02-25
+
+### Fixed
+
+- Fixed the warning icon color in the tree view panel by updating ThemeColor to "editorWarning.foreground".
+
 # [1.0.4] - 2025-02-25 (Dead Code Hunter v1.0.4 - Webpack Optimization & Fixes)
 
 ### Improvements and Fixes

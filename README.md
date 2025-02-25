@@ -35,7 +35,7 @@ Dead Code Hunter is a Visual Studio Code extension designed to help developers t
 
 ### 1. Install from Visual Studio Code Marketplace
 
-You can directly install the Dead Code Hunter extension from the [Visual Studio Code Marketplace](https://marketplace.visualstudio.com/).
+You can directly install the Dead Code Hunter extension from the [Visual Studio Code Marketplace](https://marketplace.visualstudio.com/items?itemName=niko-hoffren.dead-code-hunter).
 
 1. Open VS Code.
 2. Go to the Extensions panel (Ctrl+Shift+X or Cmd+Shift+X).

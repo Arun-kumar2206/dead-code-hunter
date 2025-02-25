@@ -20,16 +20,10 @@ Dead Code Hunter is a Visual Studio Code extension designed to help developers t
 - **Clear List**: A button to clear the list of errors, warnings, and dead code in the panel.
 - **Auto-Expanding Sections**: The **Errors** and **Warnings** sections are expanded by default for immediate visibility.
 
-<table>
-  <tr>
-    <td>
-      Here you can see the Dead Code Hunter panel in action. The panel shows a list of files with errors, warnings, and dead code. You can click on the items to open and fix the corresponding files. You can find the Dead Code Hunter panel in the bottom left of the Activity Bar of VS Code.
-    </td>
-    <td>
-      <img src="https://raw.githubusercontent.com/nikohoffren/dead-code-hunter/main/images/dead_code_hunter_screenshot1.png" alt="Dead Code Hunter Panel" style="width: 1700px;" />
-    </td>
-  </tr>
-</table>
+Here you can see the Dead Code Hunter panel in action. The panel shows a list of files with errors, warnings, and dead code. You can click on the items to open and fix the corresponding files. You can find the Dead Code Hunter panel in the bottom left of the Activity Bar of VS Code.
+<div align="center">
+  <img src="https://raw.githubusercontent.com/nikohoffren/dead-code-hunter/main/images/dead_code_hunter_screenshot1.png" alt="Dead Code Hunter Panel" style="width: 500px;" />
+</div>
 
 ## Installation
 
@@ -83,7 +77,8 @@ Click the "Clear List" button to reset the panel and remove all items.
 ## Configuration
 
 This extension automatically detects errors, warnings, and dead code based on the diagnostics provided by VS Code. You do not need to configure any settings to start using it, but you can always customize your diagnostics setup via your VS Code settings (e.g., ESLint or other linters).
-Contributing
+
+## Contributing
 
 Contributions are welcome! If you'd like to contribute to the extension, please follow these steps:
 

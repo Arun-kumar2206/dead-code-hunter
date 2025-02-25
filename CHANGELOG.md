@@ -4,6 +4,12 @@ All notable changes to the "dead-code-hunter" extension will be documented in th
 
 Check [Keep a Changelog](http://keepachangelog.com/) for recommendations on how to structure this file.
 
+# [1.0.2] - 2025-02-25
+
+### Added
+
+- Added CHANGELOG and updated description and instructions in README.
+
 # [1.0.1] - 2025-02-24
 
 ### Added

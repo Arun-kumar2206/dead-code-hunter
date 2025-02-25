@@ -2,7 +2,7 @@
   "name": "dead-code-hunter",
   "displayName": "Dead Code Hunter",
   "description": "A VS Code extension to detect dead code, errors, and warnings.",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "publisher": "niko-hoffren",
   "repository": {
     "type": "git",

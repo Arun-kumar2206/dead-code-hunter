@@ -20,6 +20,9 @@ Dead Code Hunter is a Visual Studio Code extension designed to help developers t
 - **Clear List**: A button to clear the list of errors, warnings, and dead code in the panel.
 - **Auto-Expanding Sections**: The **Errors** and **Warnings** sections are expanded by default for immediate visibility.
 
+Below is a screenshot of the Dead Code Hunter panel in action. The panel shows a list of files with errors, warnings, and dead code. You can click on the items to open and fix the corresponding files. You can find the Dead Code Hunter panel in the bottom left of the Activity Bar of VS Code.
+![Dead Code Hunter Panel](dead_code_hunter_screenshot1.png)
+
 ## Installation
 
 ### 1. Install from Visual Studio Code Marketplace
@@ -37,23 +40,24 @@ If you're working on the extension or want to run it locally:
 
 1. Clone this repository:
 ```bash
-git clone <repository-url>
+git clone https://github.com/nikohoffren/dead-code-hunter.git
 ```
 
 2. Navigate to the extension folder:
 ```bash
-cd <extension-folder>
+cd dead-code-hunter
 ```
 
 3. Install dependencies:
 ```bash
-npm install
+npm i
 ```
 
 4. Compile the extension:
 ```bash
 npm run compile
 ```
+
 5. Launch the extension in VS Code:
 Press F5 to run the extension in a new VS Code window.
 

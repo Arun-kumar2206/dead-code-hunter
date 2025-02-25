@@ -22,7 +22,7 @@ Dead Code Hunter is a Visual Studio Code extension designed to help developers t
 
 Here you can see the Dead Code Hunter panel in action. The panel shows a list of files with errors, warnings, and dead code. You can click on the items to open and fix the corresponding files. You can find the Dead Code Hunter panel in the bottom left of the Activity Bar of VS Code.
 <div align="center">
-  <img src="https://raw.githubusercontent.com/nikohoffren/dead-code-hunter/main/images/dead_code_hunter_screenshot1.png" alt="Dead Code Hunter Panel" style="width: 500px;" />
+  <img src="https://raw.githubusercontent.com/nikohoffren/dead-code-hunter/main/images/dead_code_hunter_screenshot2.png" alt="Dead Code Hunter Panel" style="width: 500px;" />
 </div>
 
 ## Installation
@@ -91,6 +91,10 @@ Contributions are welcome! If you'd like to contribute to the extension, please 
 ## License
 
 This extension is licensed under the MIT License. See the [LICENSE](https://github.com/nikohoffren/dead-code-hunter/blob/main/LICENSE) file for more information.
+
+## Release package creation (for maintainers)
+
+- Run `vsce package` to create a new vsix release package for VS Code Marketplace.
 
 ## Known Issues:
 

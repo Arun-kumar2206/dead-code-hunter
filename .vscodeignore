@@ -22,4 +22,4 @@ package-lock.json
 .vscodeignore
 .gitignore
 .vsce
-
+/vsix_versions

@@ -145,7 +145,7 @@ class TreeItem extends vscode.TreeItem {
     } else if (contextValue === "warning") {
       this.iconPath = new vscode.ThemeIcon(
         "warning",
-        new vscode.ThemeColor("warningForeground")
+        new vscode.ThemeColor("editorWarning.foreground")
       );
     } else if (contextValue === "deadCode") {
       this.iconPath = new vscode.ThemeIcon(

@@ -4,11 +4,15 @@ All notable changes to the "dead-code-hunter" extension will be documented in th
 
 Check [Keep a Changelog](http://keepachangelog.com/) for recommendations on how to structure this file.
 
-# [1.0.4] - 2025-02-25
+# [1.0.4] - 2025-02-25 (Dead Code Hunter v1.0.4 - Webpack Optimization & Fixes)
 
-### Updated
+### Improvements and Fixes
 
-- Updated the screenshot in README.
+- Bundled the extension with Webpack for better performance and smaller package size.
+- Set Webpack to "production" mode to ensure optimized builds.
+- Added .vscodeignore file to exclude unnecessary files from the extension package.
+- Fixed missing ts-loader issue, ensuring smooth TypeScript compilation.
+- Reduced extension package size by removing unnecessary files.
 
 # [1.0.3] - 2025-02-25
 

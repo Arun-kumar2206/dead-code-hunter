@@ -94,6 +94,7 @@ This extension is licensed under the MIT License. See the [LICENSE](https://gith
 
 ## Release package creation (for maintainers)
 
+- Update version in `package.json`
 - Run `vsce package` to create a new vsix release package for VS Code Marketplace.
 
 ## Known Issues:
